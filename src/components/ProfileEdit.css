@@ -1,0 +1,54 @@
+/* src/components/ProfileEdit.css */
+.profile-edit {
+  max-width: 100vw;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h3 input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h4 {
+  margin-top: 20px;
+}

@@ -1,0 +1,44 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3B2627;
+  color: white;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-right a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding-top: 80px; /* Adjust based on the height of your header */
+}
+
+@media (max-width: 600px) {
+  .header-left h1 {
+    font-size: 20px;
+  }
+  
+  .header-right a {
+    font-size: 14px;
+  }
+}
