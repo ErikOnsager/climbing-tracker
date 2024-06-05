@@ -4,6 +4,7 @@ import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api';
 import './Location.css';
+import mapsConfig from './mapsConfig';
 
 const Location = () => {
   const { id } = useParams();
@@ -101,7 +102,7 @@ const Location = () => {
               <p onDoubleClick={() => setEditingDetails(true)}>Details: {location.details}</p>
             )}
           </div>
-          <LoadScript googleMapsApiKey="AIzaSyAwfWo3yYJ_USsX75w8DTaZd3cYJvf7lqY">
+          <LoadScript googleMapsApiKey={mapsConfig.apiKey}>
             <GoogleMap
               center={{ lat: location.lat, lng: location.lng }}
               zoom={18}

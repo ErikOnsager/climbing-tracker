@@ -4,6 +4,7 @@ import { collection, addDoc, getDocs } from 'firebase/firestore';
 import { db, storage } from '../firebase';
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api';
+import mapsConfig from './mapsConfig';
 
 const Locations = () => {
   const [locations, setLocations] = useState([]);
@@ -104,7 +105,7 @@ const Locations = () => {
         />
         <input type="file" onChange={handleFileChange} />
         {filePreview && <img src={filePreview} alt="Preview" style={{ width: '100px' }} />}
-        <LoadScript googleMapsApiKey="AIzaSyAwfWo3yYJ_USsX75w8DTaZd3cYJvf7lqY">
+        <LoadScript googleMapsApiKey={mapsConfig.apiKey}>
           <GoogleMap
             center={mapCenter}
             zoom={10}
