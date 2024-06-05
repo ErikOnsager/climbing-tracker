@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import mapsConfig from './mapsConfig';
+import { mapsConfig } from './mapsConfig';
 
 const MapView = () => {
   const mapContainerStyle = {

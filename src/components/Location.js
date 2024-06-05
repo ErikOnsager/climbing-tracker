@@ -4,7 +4,7 @@ import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api';
 import './Location.css';
-import mapsConfig from './mapsConfig';
+import { mapsConfig } from './mapsConfig';
 
 const Location = () => {
   const { id } = useParams();

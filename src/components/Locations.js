@@ -4,7 +4,7 @@ import { collection, addDoc, getDocs } from 'firebase/firestore';
 import { db, storage } from '../firebase';
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api';
-import mapsConfig from './mapsConfig';
+import { mapsConfig } from './mapsConfig';
 
 const Locations = () => {
   const [locations, setLocations] = useState([]);
